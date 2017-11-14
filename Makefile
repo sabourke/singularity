@@ -5,7 +5,7 @@ IMAGE=kern-2.img
 all: bootstrap
 
 ${IMAGE}:
-	sudo singularity create -s 10000 ${IMAGE}
+	sudo singularity create -s 2048 ${IMAGE}
 
 bootstrap: ${IMAGE}
 	sudo singularity bootstrap ${IMAGE} Singularity
