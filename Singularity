@@ -11,10 +11,7 @@ Include: software-properties-common
     apt-add-repository restricted
     apt-get update
     apt-get dist-upgrade -y
-    apt-get install -y ubuntu-minimal casacore-tools lofar aoflagger wsclean python-casacore dysco prefactor factor vim-gtk
     apt-get autoremove
     apt-get clean
-    mkdir -p /c3se /local /apps /usr/share/lmod/lmod /var/hasplm
-    cat /dev/zero > /zero.bin || true
-    sync
-    rm /zero.bin
+    locale-gen "$LANG"
+    update-locale LANG="$LANG"
