@@ -1,7 +1,7 @@
 img?=kern-2.img
 size?=2000
 
-.PHONY: bootstrap upgrade list lofar ddf zero chalmers_mountpoints
+.PHONY: bootstrap upgrade list lofar ddf zero c3se
 
 all: bootstrap
 
